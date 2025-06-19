@@ -43,6 +43,7 @@
             />
           </label>
 
+
           <label for="numberInput">
             <input type="number" name="numberInput" id="numberInput" />
           </label>
@@ -56,7 +57,78 @@
           <label for="">
             <input type="date" name="" id="">
           </label>
+
+          <label for="">
+            <input type="email" name="" id="" placeholder="exampel@mail.com">
+          </label>
+          <label for="">
+            <input type="password" name="" id="">
+          </label>
+
+          <label for="">
+            <input type="button" value="send">
+          </label>
+          <button type="submit">send</button>
         </form>
+      </section>
+
+      <section class="section">
+        <!-- Innlogging -->
+        <form>
+          <label for="userEmail">
+            email
+            <input type="email" name="userEmail" id="userEmail"
+            placeholder="exampel@mail.com">
+          </label>
+
+          <label for="userPassword">
+            <input type="password" name="userPassword" id="userPassword">
+          </label>
+
+          <label for="viewPassword">
+            <input type="checkbox" name="viewPassword" id="viewPassword">
+            View Password
+          </label>
+
+          <label for="rememberMe">
+            <input type="checkbox" name="rememberMe" id="rememberMe">
+            Husk meg
+          </label>
+
+          <button id="loginButton">Logg inn</button>
+        </form>
+      </section>
+
+      <section class="section">
+        <!--Måleenhetskonverterer-->
+        <label for="unitInput">
+          Skriv et tall
+          <input type="number" name="unitInput" id="unitInput">
+        </label>
+
+        <label for="unitFrom">
+          <select name="unitFrom" id="unitFrom">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
+        </label>
+
+        <label for="unitTo">
+          <select name="unitTo" id="unitTo">
+            <option value="mm">mm</option>
+            <option value="cm">cm</option>
+            <option value="dm">dm</option>
+            <option value="m">m</option>
+            <option value="km">km</option>
+          </select>
+        </label>
+
+        <button id="submitButton">Calculate</button>
+
+        <p id="unitOutput"><!-- INNHOLD KOMMER FRA JS--></p>
       </section>
     </main>
 
